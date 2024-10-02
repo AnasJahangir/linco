@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar.jsx";
 import AppleLogo from "../assets/AppleLogo.svg";
+import Mobiles from "../assets/mobiles.png";
 import GooglePlayLogo from "../assets/GooglePlayLogo.svg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Page1({ nextPage, prevPage }) {
-  const [text, setText] = useState("More Points");
+  const [text, setText] = useState("more Points");
   const [key, setKey] = useState(0); // Unique key for AnimatePresence
   const texts = ["more points", "more levels", "more money"];
 
@@ -100,6 +101,17 @@ function Page1({ nextPage, prevPage }) {
           </div>
         </motion.div>
       </div>
+      <motion.div
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        variants={buttonsVariants}
+        transition={{ duration: 1 }}
+      >
+        <div className="flex justify-center items-center absolute w-full top-[70%]">
+          <img src={Mobiles} alt="Mobiles" className="w-[700px]" />
+        </div>
+      </motion.div>
       <div className="flex gap-3 absolute right-5 bottom-5">
         <button
           className="h-12 w-12 rounded-full text-[18px] bg-[#FFFFFF1A] flex justify-center items-center"

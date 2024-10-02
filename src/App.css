@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: DamavandBold;
+  src: url("./assets/Damavand-Bold.ttf");
+}
+@font-face {
+  font-family: DamavandLight;
+  src: url("./assets/Damavand-Light.ttf");
+}
+.DamavandBold {
+  font-family: DamavandBold, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.DamavandLight {
+  font-family: DamavandLight, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -60,6 +79,13 @@ body {
 
 .changble-text {
   background: linear-gradient(274deg, #ffc91e -22.35%, #fdff8f 83.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.changble-text2 {
+  background: linear-gradient(190deg, #3bc2d3 20.47%, #12122d 95.68%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
